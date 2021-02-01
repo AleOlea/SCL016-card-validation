@@ -1,0 +1,257 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+nav {
+    height: 10vh;
+    background: white;
+}
+logo {
+    color: orange;
+    font-size: 30px;
+}
+
+h1{
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 200px auto 200px;
+   height: 800px; 
+   background-color:#2980B9;
+}
+
+#box1 {
+    border: 2px solid grey;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    
+}
+
+
+
+/*
+@media (max-width:600px) { 
+
+
+main {
+    display: grid;
+    margin: 0%;
+    grid-template-columns:1fr;
+    grid-template-rows: 70px 115px minmax(400px, auto) 1fr;
+    }
+
+
+header {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+    align-content: center;
+    border-bottom: 2px solid olive;
+    }
+
+
+.home {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.title {
+    display:flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+
+#nav_bar {
+    display: flex;
+    width: auto;
+    height: auto;
+   } 
+
+
+ul {
+    display: flex;
+    flex-flow: column;
+    justify-items: start;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px; 
+    }  
+
+
+li {
+    align-items: flex-start;
+    font-size:0.9em;
+    }
+
+
+aside {
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    }
+
+
+#box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    background-image: url("../images/caracol.jpg");
+    background-size: cover;
+    border-radius: 20%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+    border: 2px solid olive;
+    }
+
+
+#box2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+    font-size: 1em;
+    text-align: start;
+    }
+
+    
+.content {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 150px;
+    grid-gap: 1%;
+    text-align: center;
+    }
+
+
+#box4 {
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 1;
+     margin-left: 15px;
+    }
+
+      
+#box5 {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 2;
+     margin-left: 5px;
+     width: auto;
+     height: auto;
+     border-radius: 15%;  
+     background-image: url("../images/fermented_cabbage.jpg");
+     background-size: cover;
+     border: 4px solid olive;
+    }
+
+
+#box6 {
+     grid-column-start: 2;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     margin-right: 5px;
+     border-radius: 15%;  
+     background-image: url("../images/little_plants.jpg");
+     background-size: cover;
+     border: 4px solid olive;
+    }
+
+
+footer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-top: 1px solid olive;
+    }
+
+    
+#about {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    margin-top: 5px;
+    }
+
+    
+#contact {
+    display: flex;
+    background-image: url("../images/icon_sm.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+    }
+
+}
+
+
+
+
+

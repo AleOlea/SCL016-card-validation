@@ -20,21 +20,27 @@ function clickbtnValidar(event) {
     event.preventDefault();
     let creditCard = document.getElementById("creditCard").value;
     console.log(creditCard);
-    alert("validando card nro:" + creditCard)
-
+    /*alert("validando card nro:" + creditCard)*/
 
     
-
-//a partir de este elemento que agregue voy a crear un objeto
-
-
-
-//trying to display cc card number entered.
-/*let showDigits = document.getElementById("digits")
-showDigits.addTextContent(creditCard);*/
+ 
+    let digits = creditCard.split("");
+    if (digits.length % 2 === 0) {
+        digits = digits.map((digit, idx) => idx % 2 === 0 ? digit * 2 : digit);
+      } else {
+        digits = digits.map((digit, idx) => idx % 2 === 1 ? digit * 2 : digit);
+      }
+      
+    console.log(digits)
     
-    
-    }
+   
+}
+
+
+/*
+for(let i = 0; i < creditCard.length; i++){
+    let card = creditCard[i];
+    /*console.log(i)*/
 
 
 

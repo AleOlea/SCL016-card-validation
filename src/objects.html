@@ -40,8 +40,8 @@
             "apellido": apellido,
             "telefono": telefono,
             "email": email
+        }
            
-
         personas.push(persona);
         mostrarPersonas();
     }
@@ -50,9 +50,9 @@
         let listado = document.getElementById("listado");
         let html = " ";
         for (let persona of personas) {
-            html += persona.nombre + " " + persona.apellido + " " + persona.telefono + " " + persona.email;
+            html += persona.nombre + " " + persona.apellido + " " + persona.telefono + " " + persona.email + "<br />";
         }
-        listado.innerHTML = html;
+        listado.innerHTML = html; 
     }
     for (let persona of personas) {
         

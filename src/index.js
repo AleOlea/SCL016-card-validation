@@ -22,6 +22,9 @@ function clickbtnValidar(event) {
     console.log(creditCard);
     alert("validando card nro:" + creditCard)
 
+
+    
+
 //a partir de este elemento que agregue voy a crear un objeto
 
 

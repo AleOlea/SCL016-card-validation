@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+
+</head>
+
+<body>
+
+    <label> Nombre</label> <input id="txtNombre" type="text"/><br />
+    <label> Apellido</label> <input id="txtApellido" type="text"/><br />
+    <label> Telefono</label> <input id="txtTelefono" type="text"/><br />
+    <label> Email</label><input id="txtEmail" type ="text"/><br />
+    <button id="btnAgregar">Agregar</button><br /><br />
+
+    <div id= "listado"></div>
+        
+<script>
+    //load page and execute fucntion "iniciar"
+    window.onload = iniciar;
+
+    const personas= [];
+
+    function iniciar() {
+        let btnAgregar = document.getElementById("btnAgregar");
+        btnAgregar.addEventListener("click", clickBtnAgregar);
+    }
+
+    function clickBtnAgregar() {
+        let nombre = document.getElementById("txtNombre").value;
+        let apellido = document.getElementById("txtApellido").value;
+        let telefono= document.getElementById("txtTelefono").value;
+        let email= document.getElementById("txtEmail").value;
+       
+        const persona = {
+            "nombre": nombre,
+            "apellido": apellido,
+            "telefono": telefono,
+            "email": email
+           
+
+        personas.push(persona);
+        mostrarPersonas();
+    }
+
+    function mostrarPersonas() {
+        let listado = document.getElementById("listado");
+        let html = " ";
+        for (let persona of personas) {
+            html += persona.nombre + " " + persona.apellido + " " + persona.telefono + " " + persona.email;
+        }
+        listado.innerHTML = html;
+    }
+    for (let persona of personas) {
+        
+    }
+
+</script>
+</body>
+</html>

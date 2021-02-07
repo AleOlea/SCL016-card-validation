@@ -1,5 +1,6 @@
 
-export default validator;
+/*export default validator;*/
+
 const validator = {
 
 isValid: function (n) {

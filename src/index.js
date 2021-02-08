@@ -36,6 +36,7 @@ function clickbtnValidar(event) {
       } else {
         digits = digits.map((digit, idx) => idx % 2 === 1 ? digit * 2 : digit);
       }
+      
       console.log(digits)  
 }
 

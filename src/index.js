@@ -10,8 +10,13 @@ function clickbtnValidar(event){
 
   document.getElementById("detalle").innerText =  validator.isValid(creditCard);
  
-}
 
+  };
+
+//Where to put mskify?
+//function maskify(creditCard){creditCard = creditCard.replace(/\d(?=\d{4})/g, "*")}
+
+ 
 
 
 

@@ -50,9 +50,10 @@ h1{
 main {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: 200px 100px 100px 100px 400px;
+   grid-template-rows: 200px 200px 200px 200px 200px;
    height: auto; 
    background: linear-gradient(to right top, #2980B9, #6DD5FA);
+   border: 4px solid red;
 }
 
   
@@ -141,43 +142,53 @@ form {
     align-items: center;
     justify-self:  center;  
     align-self: center;  
-    border: 2px solid yellow;
+    border: 4px solid #2980B9;
 }
 
-/*
+
+
+
+
 footer {
-    display: grid;
+    display: flex;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    border-top: 1px solid olive;
+    border-top: 1px solid red;
     }
 
     
 #about {
-    display: flex;
+    display: flex; 
     grid-column-start: 1;
     grid-column-end: 3;
     justify-content: center;
-    margin-top: 5px;
+    align-items: center;
+    justify-self:  center;  
+    align-self: center;  
+    
+   
+    
+
     }
 
-    
+ /*
 #contact {
     display: flex;
     background-image: url("../images/icon_sm.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 80px;
-    height: 30px;
+    height: 40px;
     align-self: center;
     justify-self: center;
-    }
+    margin-top: 30px;
+    }*/
 
-}
+
 
 
 

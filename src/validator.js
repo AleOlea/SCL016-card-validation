@@ -22,30 +22,29 @@ const validator = {
 
     console.log(sum);
     if (sum % 10 === 0) {
-      console.log("Valid card")
+      console.log("TRUE")
       detalle.style.color = "#00ff00";
       return "Valid Card"
     }
 
     else {
-      console.log("Not Valid")
+      console.log("FALSE")
       detalle.style.color = "red";
       return " Not Valid";
     }
   },
+  //PREGUNTA 2 NO FUNCIONA//
 
-  maskify(creditCard) {
-
-    let hideDigits = creditCard.split("");
-    for (let i = 0; i < hideDigits.length-4; i++) {
+  /*maskify(creditCard) {
+    let digitsArray = creditCard;
+    for (let i = 0; i < creditCard.length-4; i++) {
       digitsArray[i] = "#";
     }
-    console.log(creditCard);
-  }
+    console.log(digitsArray);
+  }*/
 };
 
 export default validator;
-
 
 
 

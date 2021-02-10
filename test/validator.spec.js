@@ -6,6 +6,7 @@ describe('validator', () => {
     expect(typeof validator).toBe('object');
   });
 
+
   describe('validator.isValid', () => {
     it('debería ser una función', () => {
       expect(typeof validator.isValid).toBe('function');
@@ -23,6 +24,7 @@ describe('validator', () => {
       // escribe aquí tu test
     });
   });
+  
 
   describe('validator.maskify', () => {
     it('debería ser una función', () => {

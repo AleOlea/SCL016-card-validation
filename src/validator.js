@@ -9,12 +9,6 @@ const validator = {
       digits[i] = parseInt(digits[i]);
       console.log(digits[i])
 
-//PREGUNTA 1 NO ESTA FUNCIONANDO//
-
-      if (creditCard.value < 10) {
-        alert("Please, enter a Credit Card Number");
-      }
-
       if (i % 2 === 0) {
         digits[i] *= 2
         if (digits[i] > 9) {
@@ -38,7 +32,7 @@ const validator = {
       return " Not Valid";
     }
   },
-//PREGUNTA 2 NO FUNCIONA//
+  //NO FUNCIONA
 
   maskify(creditCard) {
     let digitsArray = creditCard;

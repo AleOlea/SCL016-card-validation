@@ -2,7 +2,7 @@ const validator = {
 
   isValid: function (creditCard) {
 
-    let digits = creditCard.split("").reverse();
+    let digits = creditCard.split("")     //eliminé reverse() pues daba error en tarjetas orobadas que eran validas//
     let sum = 0;
 
     for (let i = 0; i < creditCard.length; i++) {
@@ -24,37 +24,30 @@ const validator = {
       sum += digits[i];
       console.log(digits[i]);
     }
-
     console.log(sum);
-
     if (sum % 10 === 0) {
-      console.log("is a valid card")
+      console.log("Valid card")
       detalle.style.color = "#00ff00";
-      return "This is a Valid Card"
-      
-     
-    }
+      return "Valid Card" 
+     }
     else {
       console.log("Not Valid")
       detalle.style.color = "red";
-      return "Not Valid";
-      
+      return " Not Valid";
+       }
+  
+      }
     }
-  }
-}
-
 export default validator;
 
 
 
 //MASKIFY
-/*function maskify(creditCard) {
-  let dd = creditCard.toString();
-  let hash = creditCard.replace((/./g), '#');
-  for (let i = (hash.length - 4); i < hash.length; i++) {
-      hash[i] = dd[i];
-  }
-  return hash;}*/
+/*
+let digitsToHide= creditCard.value;
+let lastDigit = digitsToHide.slice(-4);
+let mask_symbol = "#";
+let masked_str = mask_symbol.repeat() + lastDigit;*/
 
 
 

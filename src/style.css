@@ -37,7 +37,8 @@ nav {
 
 logo {
     color: orange;
-    font-size: 3em;
+    font-size: 4em;
+    text-emphasis: ;
     }
 
 h1{
@@ -50,13 +51,11 @@ h1{
 main {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: 200px 200px 200px 200px 200px;
+   grid-template-rows: 200px 200px 200px 200px 150px;
    height: auto; 
    background: linear-gradient(to right top, #2980B9, #6DD5FA);
-   border: 4px solid red;
-}
-
   
+}
 
 
 #box1 {
@@ -71,8 +70,27 @@ main {
     color: White; 
     background-color:#fff4;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    align-self: center;  
     }
+
+#box2 {
+    display:flex;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 800px;
+    height: 70px;
+    background-image: url("cards.png");
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    justify-self:  center;  
+    align-self: end;  
+    border: 4px solid #2980B9;
+    }
+
 
 form {
     display:flex;
@@ -80,21 +98,21 @@ form {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    align-items: top;  
-
-
+    justify-content: center;
+    align-content: center;   
 }
 
 #creditCard {
     display:flex;
     border: 2px solid black;
-    width: 700px;
-    height: 50px;
-    font-size: 24px; 
+    width: 500px;
+    height: 70px;
+    font-size: 30px; 
     background-color:#fff4;
     color: black;
-    justify-content: center;
-    align-items: center;   
+    text-align: center;
+    
+    
    
 }
 
@@ -103,8 +121,8 @@ form {
     display:flex;
     border: 2px solid black;
     width: 300px;
-    height: 50px;
-    font-size: 24px; 
+    height: 70px;
+    font-size: 30px; 
     background-color:#FF9A29;
     color: black;
     justify-content: center;
@@ -118,16 +136,16 @@ form {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 4;
-    width: 200px;
+    width: 300px;
     height: 100px;
     border: 2px solid red;
-    font-size: 20px;
+    font-size: 30px;
     color:black;
     justify-content: center;
     align-items: center;
     justify-self:  center;    
 }
-
+/*
 #box2 {
     display:flex;
     grid-column-start: 2;
@@ -144,9 +162,7 @@ form {
     align-self: center;  
     border: 4px solid #2980B9;
 }
-
-
-
+*/
 
 
 footer {
@@ -155,38 +171,21 @@ footer {
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    border-top: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    background-color: #2980B9;
+    border-top:  black;
+ 
     }
 
     
 #about {
     display: flex; 
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-content: center;
-    align-items: center;
-    justify-self:  center;  
-    align-self: center;  
-    
-   
-    
-
-    }
-
- /*
-#contact {
-    display: flex;
-    background-image: url("../images/icon_sm.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 80px;
-    height: 40px;
-    align-self: center;
-    justify-self: center;
-    margin-top: 30px;
-    }*/
+    line-height: 30px;   
+    font-size: 1.5em;
+    color: whitesmoke
+    ;
+}
 
 
 

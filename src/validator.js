@@ -9,9 +9,11 @@ const validator = {
       digits[i] = parseInt(digits[i]);
       console.log(digits[i])
 
-      if (creditCard.value < 10) {
-        alert("enter valid number");
-      }
+      // NO ESTA FUNCIONANDO
+      
+      /*if (creditCard.value < 10) {
+        alert("Please, enter a Credit Card Number");
+      }*/
 
       if (i % 2 === 0) {
         digits[i] *= 2
@@ -34,6 +36,7 @@ const validator = {
       /*console.error("Not Valid")*/
       console.log("Not Valid")
       return "Not Valid";
+
     }
   }
 }

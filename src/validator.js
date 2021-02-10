@@ -10,10 +10,9 @@ const validator = {
       console.log(digits[i])
 
       // NO ESTA FUNCIONANDO
-      
-      /*if (creditCard.value < 10) {
+      if (creditCard.value < 10) {
         alert("Please, enter a Credit Card Number");
-      }*/
+      }
 
       if (i % 2 === 0) {
         digits[i] *= 2
@@ -36,12 +35,23 @@ const validator = {
       /*console.error("Not Valid")*/
       console.log("Not Valid")
       return "Not Valid";
-
+      
     }
   }
 }
 
 export default validator;
+
+
+
+//MASKIFY
+/*function maskify(creditCard) {
+  let dd = creditCard.toString();
+  let hash = creditCard.replace((/./g), '#');
+  for (let i = (hash.length - 4); i < hash.length; i++) {
+      hash[i] = dd[i];
+  }
+  return hash;}*/
 
 
 

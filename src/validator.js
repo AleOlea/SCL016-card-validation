@@ -29,11 +29,14 @@ const validator = {
 
     if (sum % 10 === 0) {
       console.log("is a valid card")
+      detalle.style.color = "#00ff00";
       return "This is a Valid Card"
+      
+     
     }
     else {
-      /*console.error("Not Valid")*/
       console.log("Not Valid")
+      detalle.style.color = "red";
       return "Not Valid";
       
     }

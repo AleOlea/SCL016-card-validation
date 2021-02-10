@@ -10,11 +10,10 @@ function clickbtnValidar(event) {
   console.log(creditCard);
 
   document.getElementById("detalle").innerText = validator.isValid(creditCard);
-  
-  if (creditCard.length < 10) {
-    alert("Please, enter a Credit Card Number");
-  }
 
+  if (creditCard.length < 10) {
+    alert("Please, enter a credit Card number");
+  }
 };
 
 

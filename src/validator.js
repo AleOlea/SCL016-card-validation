@@ -5,6 +5,7 @@ const validator = {
     let digits = creditCard.split("")    //eliminé reverse() pues daba error en tarjetas validas//
     let sum = 0;
 
+
     for (let i = 0; i < creditCard.length; i++) {
       digits[i] = parseInt(digits[i]);
       console.log(digits[i])
@@ -32,18 +33,20 @@ const validator = {
       return " Not Valid";
     }
   },
-  //NO FUNCIONA
 
   maskify(creditCard) {
-    let digitsArray = creditCard;
-    for (let i = 0; i < creditCard.length; i++) {
+
+    let hideDigits = creditCard.split("");
+    for (let i = 0; i < hideDigits.length-4; i++) {
       digitsArray[i] = "#";
     }
-    console.log(digitsArray);
+    console.log(creditCard);
   }
 };
 
 export default validator;
+
+
 
 
 

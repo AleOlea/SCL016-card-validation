@@ -24,13 +24,12 @@ const validator = {
     console.log(sum);
     if (sum % 10 === 0) {
       console.log("TRUE")
-      detalle.style.color = "#00ff00";
+     
       return "Valid Card"
     }
 
     else {
       console.log("FALSE")
-      detalle.style.color = "red";
       return " Not Valid";
     }
   },

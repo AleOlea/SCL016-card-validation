@@ -24,7 +24,6 @@ const validator = {
     console.log(sum);
     if (sum % 10 === 0) {
       console.log("TRUE")
-     
       return "Valid Card"
     }
 
@@ -34,13 +33,14 @@ const validator = {
     }
   },
 
-  /*maskify(creditCard) {
+  maskify(creditCard) {
     let maskDigits = creditCard.split("");
     for (let i = 0; i < maskDigits.length -4; i++) {
       maskDigits[i]= "#";
     }
     console.log(maskDigits)
-  }*/
+    return maskDigits.join("");
+  }
  
 };
 

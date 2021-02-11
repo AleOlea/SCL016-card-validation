@@ -5,10 +5,10 @@ btnValidar.addEventListener("click", clickbtnValidar);
 
 function clickbtnValidar(event) {
   event.preventDefault();
-  let creditCard = document.getElementById("creditCard").value;
+  let creditCardNumber = document.getElementById("creditCard").value;
 
-  console.log(creditCard);
-  let validResult = validator.isValid(creditCard);
+  console.log(creditCardNumber);
+  let validResult = validator.isValid(creditCardNumber);
 
   document.getElementById("detalle").innerText = validResult;
 
@@ -18,22 +18,24 @@ function clickbtnValidar(event) {
     detalle.style.color = "red";
   }
 
-
-  if (creditCard.length < 13) {
+  if (creditCardNumber.length < 13) {
     alert("Please enter a card number");
   }
 
-  //how to refresh the box?
+  //refresh the box
 
-  
+
+
     let refresh = document.getElementById("refresh");
     refresh.addEventListener("click", function(){
     document.getElementById("detalle").innerText= "Result";
+    detalle.style.color = "black";
+    document.getElementById("creditCard").value = "";//empty input field
     })
   
-    /*let maskD = validator.maskify(creditCard);
-    
-    console.log(maskD)*/
+    let maskD = validator.maskify(creditCardNumber);
+    document.getElementById("creditCard").value= maskD;
+    console.log(maskD)
 
 };
 

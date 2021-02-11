@@ -11,6 +11,7 @@ que le permita a un usuario validar el número de una tarjeta de crédito<br/>
 Además, se implementa funcionalidad para ocultar todos los dígitos de una tarjeta menos los<br> últimos cuatro.<br/>
 
 2. Imagen Final del Proyecto:<br/>
+https://miro.com/welcomeonboard/ESQn6iZc7GnmcP4VqLwmw43mquu5B2G104muvZRuaSrIusIT3WUkxL5Mlr0OWIuE
 
 link
 

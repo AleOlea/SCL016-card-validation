@@ -11,9 +11,14 @@ function clickbtnValidar(event) {
 
   document.getElementById("detalle").innerText = validator.isValid(creditCard);
 
-  if (creditCard.length < 10) {
+  //improve
+  /*if (creditCard.length < 13) {
     alert("Please, enter a credit Card number");
-  }
+  }*/
+
+  let maskD = validator.maskify(creditCard);
+  console.log(maskD)
+
 };
 
 

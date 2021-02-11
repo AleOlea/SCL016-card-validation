@@ -13,15 +13,15 @@ describe('validator', () => {
     });
 
     it.skip('debería retornar true para "4083952015263"', () => {
-      // escribe aquí tu test
+      // escribe aquí tu test//retorna false
     });
 
     it.skip('debería retornar true para "79927398713"', () => {
-      // escribe aquí tu test
+      // escribe aquí tu test// retorna false.
     });
 
     it.skip('debería retornar false para "1234567890"', () => {
-      // escribe aquí tu test
+      // escribe aquí tu test/retorna false.
     });
   });
   

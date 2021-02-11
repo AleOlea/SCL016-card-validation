@@ -2,7 +2,7 @@ const validator = {
 
   isValid: function (creditCard) {
 
-    let digits = creditCard.split("")    //eliminé reverse() pues daba error en tarjetas validas//
+    let digits = creditCard.split("");    //eliminé reverse() pues daba error en tarjetas validas//
     let sum = 0;
 
 
@@ -10,15 +10,21 @@ const validator = {
       digits[i] = parseInt(digits[i]);
       console.log(digits[i])
 
-      if (i % 2 === 0) {
+    if (i % 2 === 0) {
         digits[i] *= 2
-        if (digits[i] > 9) {
+
+    if (digits[i] > 9) {
           digits[i] -= 9
+          //testing adding digits
+          /*let newDigit = digit.split("").map(Number);
+          digit[i] = newDigit[0] + newDigit[1]
+          console.log(newDigit)*/
         }
       }
+
       sum += digits[i];
       console.log(digits[i]);
-    }
+      }
 
     console.log(sum);
     if (sum % 10 === 0) {
@@ -33,15 +39,18 @@ const validator = {
       return " Not Valid";
     }
   },
-  //PREGUNTA 2 NO FUNCIONA//
 
-  /*maskify(creditCard) {
-    let digitsArray = creditCard;
-    for (let i = 0; i < creditCard.length-4; i++) {
-      digitsArray[i] = "#";
+  maskify(creditCard) {
+
+    let maskDigits = creditCard.split("");
+    for (let i = 0; i < maskDigits.length -4; i++) {
+      maskDigits[i]= "#";
     }
-    console.log(digitsArray);
-  }*/
+
+    console.log(maskDigits)
+  }
+ 
+
 };
 
 export default validator;

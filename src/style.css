@@ -57,7 +57,7 @@ h1{
 main {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: 200px 200px 150px 200px 150px;
+   grid-template-rows: 150px 250px 200px 200px 200px 200px;
    height: auto; 
    background: linear-gradient(to right top, #2980B9, #6DD5FA);
   
@@ -72,7 +72,7 @@ main {
     grid-row-end: 3;
     width: auto;
     height: 100px;
-    font-size: 1.8em; 
+    font-size: 2.3em; 
     color: White; 
     background-color:#2980B9;
     justify-content: center;
@@ -139,7 +139,7 @@ form {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 4;
-    width: 300px;
+    width: 350px;
     height: 100px;
     border: 8px solid whitesmoke;
     border-radius: 10%;
@@ -150,14 +150,31 @@ form {
     justify-self:  center;    
 }
 
+#refresh{
+    display:flex;
+    border: 4px solid #ffd700;
+    background-color: whitesmoke;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    font-size: 30px;
+    width: 300px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    justify-self:  center;    
+}
+
+
 
 
 footer {
     display: flex;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     justify-content: center;
     align-items: center;
     background-color: #2980B9;

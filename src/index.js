@@ -11,12 +11,18 @@ function clickbtnValidar(event) {
 
   document.getElementById("detalle").innerText = validator.isValid(creditCard);
 
-  //1. improve
-  /*if (creditCard.length < 13) {
-    alert("Please, enter a credit Card number");
-  }*/
+
+  if (creditCard.length < 13) {
+    alert("Please enter a card number");
+  }
+
+ //how to refresh the box?
+
 /*
-  let maskD = validator.maskify(creditCard);
+  let refresh = document.getElementById("refresh");
+  refresh.addEventListener("click", )
+
+  /*let maskD = validator.maskify(creditCard);
   
   console.log(maskD)*/
 

@@ -1,12 +1,13 @@
 const validator = {
 
-  isValid: function (creditCard) {
-
-    let digits = creditCard.split("").reverse();  
+  isValid: function (creditCardNumber) {
+   //divides the String into ordered list of substrings. Delcare varaible for the addition.
+    let digits = creditCardNumber.split("").reverse();  
     let sum = 0;
 
-    for (let i = 0; i < creditCard.length; i++) {
-      digits[i] = parseInt(digits[i]);
+  //iterating over substring
+    for (let i = 0; i < creditCardNumber.length; i++) {
+      digits[i] = parseInt(digits[i]); // returns an integer.
       console.log(digits[i])
 
     if (i % 2 !== 0) {
@@ -16,25 +17,25 @@ const validator = {
           digits[i] -= 9
         }
       }
-
-      sum += digits[i];
-      console.log(digits[i]);
+//adding the resulted digits operations
+    sum += digits[i];
+    console.log(digits[i]);
       }
-
     console.log(sum);
+
+//rendering results
     if (sum % 10 === 0) {
       console.log("TRUE")
       return "Valid Card"
-    }
-
-    else {
+    }else {
       console.log("FALSE")
-      return "Not Valid";
+      return "NOT Valid";
     }
   },
 
-  maskify(creditCard) {
-    let maskDigits = creditCard.split("");
+
+  maskify(creditCardNumber) {
+    let maskDigits = creditCardNumber.split("");
     for (let i = 0; i < maskDigits.length -4; i++) {
       maskDigits[i]= "#";
     }
@@ -44,6 +45,7 @@ const validator = {
 };
 
 export default validator;
+
 
 //Código de cami 
 /*

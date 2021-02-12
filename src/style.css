@@ -57,7 +57,7 @@ h1{
 main {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: 150px 250px 200px 200px 200px 200px;
+   grid-template-rows: 150px 230px 200px 200px 200px 200px;
    height: auto; 
    background: linear-gradient(to right top, #2980B9, #6DD5FA);
   

@@ -33,7 +33,6 @@ function clickbtnValidar(event) {
   let maskD = validator.maskify(creditCardNumber);
   document.getElementById("creditCard").value = maskD;
   console.log(maskD)
-
 };
 
 

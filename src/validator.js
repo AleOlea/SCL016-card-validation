@@ -40,8 +40,8 @@ const validator = {
       maskDigits[i]= "#";
     }
     console.log(maskDigits)
-    return maskDigits.join("");
-  }
+    return maskDigits.join("");}
+
 };
 
 export default validator;
@@ -49,17 +49,25 @@ export default validator;
 
 //Código de cami 
 /*
-maskify(creditCard) {
+
+
+maskify(creditCardNumber) {
   let maskD = "";
-  let maskDigits = creditCard.split("");
+  let maskDigits = creditCardNumber.split("");
   for (let i = 0; i < maskDigits.length -4; i++) {
     if(i< maskDigits.length -4){
       maskDigits[i]= "#";
 }
-maskD = maskD + maskD [i]; 
+maskD = maskD + maskD[i]; 
 }
 return maskD;
  }
+--------------
+
+ 
+  let maskD = validator.maskify(creditCardNumber);
+  document.getElementById("creditCard").value = maskD;
+  console.log(maskD)
 */
 
 

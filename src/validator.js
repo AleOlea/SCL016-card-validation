@@ -41,16 +41,11 @@ const validator = {
     console.log(maskDigits)
     return maskDigits.join("");
   }
-
-  
- 
 };
 
 export default validator;
 
-
-//Código de cami
-
+//Código de cami 
 /*
 maskify(creditCard) {
   let maskD = "";

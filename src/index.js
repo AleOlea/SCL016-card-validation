@@ -6,7 +6,7 @@ btnValidar.addEventListener("click", clickbtnValidar);
 
 //Defining function gets user input value(text).
 function clickbtnValidar(event) {
-  event.preventDefault();
+  event.preventDefault();//prevents form from submiting
   let creditCardNumber = document.getElementById("creditCard").value;
   console.log(creditCardNumber);
 
@@ -26,7 +26,12 @@ function clickbtnValidar(event) {
   refresh.addEventListener("click", function () {
     document.getElementById("detalle").innerText = "Result";
     detalle.style.color = "black";
-    document.getElementById("creditCard").value = "";//to have an empty input field
+
+    //to have an empty input field*/
+    /*document.getElementById("creditCard").value = "";//to have an empty input field*/
+    //IMPORTANT: probar poner solo : 
+    creditCard.value=""; //al parecer funciona igual.
+    
   })
 
   //Maskify  number input on the box "Credit Card"

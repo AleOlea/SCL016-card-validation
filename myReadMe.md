@@ -1,5 +1,5 @@
 # Laboratoria/SCL016
-Project: Card-Validation 
+Project: Card-Validation - 2021
 Author: Alejandra Olea 
 Credits: Images Unsplash (free).
 This project requires to utilize HTML, CSS and JavaScript skills. 
@@ -32,6 +32,7 @@ https://miro.com/welcomeonboard/ESQn6iZc7GnmcP4VqLwmw43mquu5B2G104muvZRuaSrIusIT
 
 5. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 el feed back de Domi fue adoptar un javascript mas  moderno.
+
 
 6. Imagen del prototipo final.
 https://miro.com/welcomeonboard/ESQn6iZc7GnmcP4VqLwmw43mquu5B2G104muvZRuaSrIusIT3WUkxL5Mlr0OWIuE

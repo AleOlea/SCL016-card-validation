@@ -11,7 +11,7 @@ function clickbtnValidar(event) {
     let creditCardNumber = document.getElementById("creditCard").value;//user input text//
     console.log(creditCardNumber);
     let detalle = document.getElementById("detalle");//cambio aqui
-    let creditCard = document.getElementById("creditCard")
+    /*let creditCard = document.getElementById("creditCard")*/
     
 
 //UI red/green results in box "Results" from "validator.isValid(creditCardnumber)" function is in validator.js.line 1 and 3.
@@ -33,8 +33,12 @@ let refresh = document.getElementById("refresh");
 
 
 //Empty #creditCard input*/
+let creditCard = document.getElementById("creditCard")//my add my cambio 
+creditCard.value=""; //my cambio
+
+
 document.getElementById("creditCard").value = "";
-  /* creditCard.value=""; */
+
    })
    
 //Return maskify input on"Credit Card" box.
@@ -42,6 +46,6 @@ document.getElementById("creditCard").value = "";
 let maskD = validator.maskify(creditCardNumber) 
     document.getElementById("creditCard").value = maskD; 
     console.log(maskD)
-  };
+  }
 
 

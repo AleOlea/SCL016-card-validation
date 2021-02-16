@@ -1,18 +1,20 @@
 import validator from './validator.js';
 
-//Getting element´s item event to trigger actions (funtions).
+//Getting element´s item event "btnValidar" to trigger funtion
 let btnValidar = document.getElementById("btnValidar");
-btnValidar.addEventListener("click", clickbtnValidar);//function clickbtnValidar when "click"//
+btnValidar.addEventListener("click", clickbtnValidar);//when"click" function "clickbtnValidar2 //
 
-//Defining clickbtnValidar function to get user input value(text).
+
+//Defining "clickbtnValidar" function to get user input value(text).
 function clickbtnValidar(event) {
     event.preventDefault();//prevents form from submiting.
-    let creditCardNumber = document.getElementById("creditCard").value;
+    let creditCardNumber = document.getElementById("creditCard").value;//user input text//
     console.log(creditCardNumber);
 
-//UI red/green results in box "Results" from "validator.isValid(creditCardnumber)" function in validator.js.line 1 and 3.
+
+//UI red/green results in box "Results" from "validator.isValid(creditCardnumber)" function is in validator.js.line 1 and 3.
 let validResult = validator.isValid(creditCardNumber);
-    document.getElementById("detalle").innerText = validResult;//validResult "let" defined line 14. Function in validator.js. lines 1 and 3.
+    document.getElementById("detalle").innerText = validResult;
     if (validResult === "Valid Card") {
     detalle.style.color = "#00ff00";
     } else {
@@ -25,15 +27,17 @@ let refresh = document.getElementById("refresh");
    document.getElementById("detalle").innerText = "Result";
    detalle.style.color = "black";
 
+
 //Empty #creditCard input*/
 /*document.getElementById("creditCard").value = "";*/
    creditCard.value=""; 
-  })
+   })
+   
 
 //Return maskify input on"Credit Card" box.
-let maskD = validator.maskify(creditCardNumber);
+let maskD = validator.maskify(creditCardNumber);  
     document.getElementById("creditCard").value = maskD;
     console.log(maskD)
-};
+  };
 
 

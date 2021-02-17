@@ -2,14 +2,13 @@ const validator = {
 
   isValid: function (creditCardNumber) {
 
-//split and reverse input string. 
     let digits = creditCardNumber.split("").reverse();  
 
-//Declare let for addition.   
+//for add:   
     let sum = 0;
 
-//iterating the array for Luhn algorithm.
 
+//iterating for Luhn algorithm.
     for (let i = 0; i < creditCardNumber.length; i++) {
       digits[i] = parseInt(digits[i]);      
       console.log(digits[i]);
@@ -25,8 +24,7 @@ const validator = {
       }
       console.log(sum);
 
-//Operating results.
-
+//Results.
        if (sum % 10 === 0) {
        console.log("TRUE")
        return "Valid Card"
@@ -36,16 +34,16 @@ const validator = {
        }
      },
 
-//Iteration to return maksify as "#" all input numbers but last four.
-
+//maksify"#" all input but last 4.
   maskify(creditCardNumber) {
     let maskDigits = creditCardNumber.split("");
     for (let i = 0; i < maskDigits.length -4; i++) {
       maskDigits[i]= "#";
     }
-/*console.log(maskDigits)*/
+    
+console.log(maskDigits)
 
-    return maskDigits.join("");  //to return less extended number.
+    return maskDigits.join("");  
     }
     };
 

@@ -1,23 +1,22 @@
 import validator from './validator.js';
 
 //Getting # "btnValidar".
+
 let btnValidar = document.getElementById("btnValidar");
 btnValidar.addEventListener("click", clickbtnValidar);//when"click" start function "clickbtnValidar" //
 
 
-//To get input value.
+//Getting user input value.
 function clickbtnValidar(event) {
-    event.preventDefault();//prevents form from submiting.
+    event.preventDefault();
     let creditCardNumber = document.getElementById("creditCard").value;
-/*console.log(creditCardNumber);*/
+    console.log(creditCardNumber);
 
-    let detalle = document.getElementById("detalle");
-    /*let creditCard = document.getElementById("creditCard")*/
-    
-
-//UI red/green results in box "Results" from "validator.isValid(creditCardnumber)" function is in validator.js.line 1 and 3.
+//UI red/green "Results" 
+let detalle = document.getElementById("detalle");
 let validResult = validator.isValid(creditCardNumber);
-    document.getElementById("detalle").innerText = validResult;
+/*document.getElementById("detalle").innerText = validResult;/*Probando acortar variable deberia ser lo mismo*/
+detalle.innerText = validResult;
     if (validResult === "Valid Card") {
     detalle.style.color = "#00ff00";
     } else {
@@ -27,21 +26,22 @@ let validResult = validator.isValid(creditCardNumber);
 //Refresh box "Credit Card" by clicking "Start Again".
 let refresh = document.getElementById("refresh");
    refresh.addEventListener("click", function () {
-   document.getElementById("detalle").innerText = "Result";
+   /*document.getElementById("detalle").innerText = "Result";*//*Probando acortar variable, deberia ser lo mismo*/
+   detalle.innerText = "Result";
    detalle.style.color = "black";
 
 
-//Empty #creditCard input*/
-let creditCard = document.getElementById("creditCard")//change after spec
-  creditCard.value="";
-  document.getElementById("creditCard").value = "";
+//creditCard box clear/
+let creditCard = document.getElementById("creditCard")//changed after spec
+  creditCard.value = "";
+  /*document.getElementById("creditCard").value = "";*/
+
 })
    
 //Return maskify input on"Credit Card" box.
 let maskD = validator.maskify(creditCardNumber) 
-    document.getElementById("creditCard").value = maskD; 
-
-/*console.log(maskD)*/
+document.getElementById("creditCard").value = maskD;    
+console.log(maskD)
   }
 
 

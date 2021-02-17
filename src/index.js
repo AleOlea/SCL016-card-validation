@@ -15,10 +15,12 @@ function clickbtnValidar(event) {
 let detalle = document.getElementById("detalle");
 let validResult = validator.isValid(creditCardNumber);//result from validator
 detalle.innerText = validResult;
-    if (validResult === "Valid Card") {
+    if (validResult === true) {
     detalle.style.color = "#00ff00";
+    detalle.innerText= "Valid Card"
     } else {
     detalle.style.color = "red";
+    detalle.innerText= "NOT Valid Card"
     }
 
 //Refresh box "Credit Card" by clicking "Start Again".
@@ -28,7 +30,7 @@ let refresh = document.getElementById("refresh");
    detalle.style.color = "black";
 
 
-//creditCard box clear/
+//creditCard restart box from blank/
 let creditCard = document.getElementById("creditCard")
    creditCard.value = "";
 })

@@ -30,10 +30,10 @@ const validator = {
 
        if (sum % 10 === 0) {
        console.log("TRUE")
-       return "Valid Card"
+       return true
        } else {
        console.log("FALSE")
-       return "NOT Valid";
+       return false
        }
      },
 

@@ -11,35 +11,30 @@ const validator = {
 //iterating the array for Luhn algorithm.
 
     for (let i = 0; i < creditCardNumber.length; i++) {
-      digits[i] = parseInt(digits[i]); // parseInt returns an integer.
+      digits[i] = parseInt(digits[i]);      
       console.log(digits[i]);
 
-        if (i % 2 !== 0) {
-         digits[i] *= 2
+      if (i % 2 !== 0) {
+        digits[i] *= 2
 
-        if (digits[i] > 9) {
+      if (digits[i] > 9) {
           digits[i] -= 9
         }
       }
-
-//adding results.
-
-    sum += digits[i];
-    console.log(digits[i]);
+      sum += digits[i];
       }
-    console.log(sum);//from line 9.
+      console.log(sum);
 
+//Operating results.
 
-//rendering results.
-
-    if (sum % 10 === 0) {
-      console.log("TRUE")
-      return "Valid Card"
-    } else {
-      console.log("FALSE")
-      return "NOT Valid";
-    }
-  },
+       if (sum % 10 === 0) {
+       console.log("TRUE")
+       return "Valid Card"
+       } else {
+       console.log("FALSE")
+       return "NOT Valid";
+       }
+     },
 
 //Iteration to return maksify as "#" all input numbers but last four.
 
@@ -48,7 +43,8 @@ const validator = {
     for (let i = 0; i < maskDigits.length -4; i++) {
       maskDigits[i]= "#";
     }
-    console.log(maskDigits)
+/*console.log(maskDigits)*/
+
     return maskDigits.join("");  //to return less extended number.
     }
     };

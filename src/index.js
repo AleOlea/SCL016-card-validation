@@ -15,6 +15,7 @@ function clickbtnValidar(event) {
 let detalle = document.getElementById("detalle");
 let validResult = validator.isValid(creditCardNumber);//result from validator
 detalle.innerText = validResult;
+
     if (validResult === true) {
     detalle.style.color = "#00ff00";
     detalle.innerText= "Valid Card"
@@ -39,6 +40,7 @@ let creditCard = document.getElementById("creditCard")
 let maskD = validator.maskify(creditCardNumber) 
 document.getElementById("creditCard").value = maskD;    
 /*console.log(maskD)*/
+
   }
 
 

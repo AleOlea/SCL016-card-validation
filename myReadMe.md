@@ -42,6 +42,9 @@ El feed back de Domi fue adoptar un javascript mas moderno.
 https://miro.com/welcomeonboard/ESQn6iZc7GnmcP4VqLwmw43mquu5B2G104muvZRuaSrIusIT3WUkxL5Mlr0OWIuE
 
 
+7. Pra abrir la aplicación: Abir terminal, iniciar comando npm start y luego control click en link local server.  Ejemplo(http://localhost:500)
+
+
 
 
 

@@ -7,7 +7,7 @@ const validator = {
     // add:   
     let sum = 0;
 
-    //iterating over "creditCardNumber2 declare on line 11 index js.
+    //iterating "creditCardNumber" line 11 index.js.
 
     for (let i = 0; i < creditCardNumber.length; i++) {
       digits[i] = parseInt(digits[i]);

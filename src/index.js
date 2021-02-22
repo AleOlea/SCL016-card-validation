@@ -32,7 +32,7 @@ function clickbtnValidar(event) {
 
 
         //Restart creditCard box.
-        let creditCard = document.getElementById("creditCard")
+        let creditCard = document.getElementById("creditCard");
         creditCard.value = "";
     })
 
